@@ -117,7 +117,7 @@ int main()
     
 	key = wait_key();
 	if(key == KEY_A) {
-	    kProcInit();
+	    kproc_init();
 	    dump();
         printf("Done, current kProcess: %08x\n", current_kpAddr);
 	    kpHome = kproc_find_by_id((u32)0xf);
